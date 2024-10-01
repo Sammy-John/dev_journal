@@ -8,7 +8,8 @@ Welcome to the IT Systems section. This area covers topics such as:
 
 You can dive into specific topics by following the links below.
 
-## Topics
+## Sections
 
-- [System Architecture](system-architecture.md)
-- [Networking Basics](networking-basics.md)
+- [IT Systems](it-systems/index.md)
+
+## More Topics Coming Soon...
