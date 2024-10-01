@@ -4,7 +4,7 @@ Consolidation of Course Knowledge, extended learning, and project code.
 
 ## Sections
 
-- [IT Systems](it-systems/index.md)  <!-- Link to IT Systems section -->
+- [IT Systems](index.md)  <!-- Link to IT Systems section -->
 - [Other Sections Coming Soon](#)    <!-- You can add more sections here -->
 
 Explore the journal to find detailed notes and projects.
