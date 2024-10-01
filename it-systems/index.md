@@ -1,15 +1,12 @@
-# IT Systems Overview
+# Welcome to Dev Journal
 
-Welcome to the IT Systems section. This area covers topics such as:
-
-- System architecture
-- Networking basics
-- Security models
-
-You can dive into specific topics by following the links below.
+Consolidation of Course Knowledge, extended learning, and project code.
 
 ## Sections
 
-- [IT Systems](it-systems/index.md)
+- [IT Systems](it-systems/index.md)  <!-- Link to IT Systems section -->
+- [Other Sections Coming Soon](#)    <!-- You can add more sections here -->
 
-## More Topics Coming Soon...
+Explore the journal to find detailed notes and projects.
+
+Visit the live site at [dev_journal](https://sammy-john.github.io/dev_journal/)
