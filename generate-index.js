@@ -1,6 +1,11 @@
 const fs = require('fs');
 const path = require('path');
 
+// Function to URL-encode filenames for HTML links
+function urlEncodeFilename(filename) {
+  return encodeURIComponent(filename).replace(/%2F/g, '/');
+}
+
 // Folder to scan
 const baseFolder = './it-systems'; // Adjust the path as necessary
 
@@ -27,7 +32,8 @@ function generateIndex(folder, relativePath = '') {
     // If it's an HTML file, add a link to it
     else if (item.endsWith('.html')) {
       const fileNameWithoutExtension = path.basename(item, '.html');
-      content += `- [${fileNameWithoutExtension}](./${path.join(relativePath, item)})\n`;
+      const encodedItem = urlEncodeFilename(item);
+      content += `- [${fileNameWithoutExtension}](./${path.join(relativePath, encodedItem)})\n`;
     }
   });
 
