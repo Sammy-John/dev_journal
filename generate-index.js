@@ -6,12 +6,12 @@ function urlEncodeFilename(filename) {
   return encodeURIComponent(filename).replace(/%2F/g, '/');
 }
 
-// Folder to scan
-const baseFolder = './it-systems'; // Adjust the path as necessary
+// Base folder containing all sections (e.g., dev_journal root folder)
+const baseFolder = './'; // Adjust the path if necessary
 
-// Function to scan the directory and build links
+// Function to scan the directory and build links for each section
 function generateIndex(folder, relativePath = '') {
-  let content = `# IT Systems\n\n## Sections\n\n`;
+  let content = `# ${relativePath || 'Section'}\n\n## Files and Subsections\n\n`;
 
   // Read all files and directories in the folder
   const items = fs.readdirSync(folder);
@@ -24,10 +24,11 @@ function generateIndex(folder, relativePath = '') {
     // Log each file or folder being processed
     console.log(`Processing: ${fullPath}`);
     
-    // If it's a folder, recursively scan it
+    // If it's a folder, recursively scan it and link to the folder's index.md
     if (stats.isDirectory()) {
-      content += `### ${item}\n\n`;
-      content += generateIndex(fullPath, path.join(relativePath, item));
+      const folderName = path.basename(fullPath);
+      content += `### [${folderName}](./${folderName}/index.md)\n\n`;
+      generateIndex(fullPath, path.join(relativePath, folderName));  // Recursively create index.md inside subfolders
     }
     // If it's an HTML file, add a link to it
     else if (item.endsWith('.html')) {
@@ -40,10 +41,51 @@ function generateIndex(folder, relativePath = '') {
   return content;
 }
 
-// Generate index.md content
-const indexContent = generateIndex(baseFolder);
+// Function to create index.md for each top-level folder
+function generateSectionIndices() {
+  // List all sections in the base folder
+  const sections = [
+    'it-systems',
+    'data-handling-and-web-concepts',
+    'programming-principles',
+    'business-analysis-and-solution',
+    'secure-web-app-development',
+    'data-structures-and-algorithms',
+    'game-development',
+    'mobile-app-development',
+    'web-services',
+    'software-testing-and-maintenance',
+    'agile-project-management',
+    'final-project',
+    'software-project',
+    'advanced-mobile-development',
+    'data-access-and-management',
+    'event-driven-programming',
+    'web-programming',
+    'advanced-programming',
+    'interaction-design',
+    'web-technologies',
+    'full-stack-python-development'
+  ];
 
-// Write the content to index.md
-fs.writeFileSync(path.join(baseFolder, 'index.md'), indexContent);
+  // Loop through each section and generate its index.md
+  sections.forEach(section => {
+    const sectionPath = path.join(baseFolder, section);
+    
+    // Check if the section folder exists
+    if (fs.existsSync(sectionPath)) {
+      const indexContent = generateIndex(sectionPath);
+      
+      // Write the index.md file in the section folder
+      fs.writeFileSync(path.join(sectionPath, 'index.md'), indexContent);
+      console.log(`Index file generated for section: ${section}`);
+    } else {
+      console.error(`Section folder not found: ${section}`);
+    }
+  });
+}
 
-console.log('Index file generated successfully!');
+// Generate index.md for each section
+generateSectionIndices();
+
+console.log('All section index files generated successfully!');

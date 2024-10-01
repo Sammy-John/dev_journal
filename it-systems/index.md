@@ -1,6 +1,6 @@
-# IT Systems
+# Section
 
-## Sections
+## Files and Subsections
 
 - [1.0 Types of Computers](./1.0%20Types%20of%20Computers.html)
 - [1.1 Peripherals](./1.1%20Peripherals.html)
