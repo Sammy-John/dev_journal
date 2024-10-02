@@ -1,9 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
-// Function to URL-encode filenames for HTML links and replace spaces with hyphens
+// Function to URL-encode filenames for HTML links (encode spaces as %20)
 function urlEncodeFilename(filename) {
-  return encodeURIComponent(filename.replace(/\s+/g, '-')).replace(/%2F/g, '/');
+  return encodeURIComponent(filename).replace(/%2F/g, '/'); // Encodes spaces as %20
 }
 
 // Base folder containing all sections (e.g., dev_journal root folder)
@@ -26,16 +26,16 @@ function generateIndex(folder, relativePath = '') {
     
     // If it's a folder, recursively scan it and link to the folder's index.md
     if (stats.isDirectory()) {
-      const folderName = path.basename(fullPath).replace(/\s+/g, '-'); // Replace spaces with hyphens
+      const folderName = path.basename(fullPath); // Leave spaces intact for folder names
       content += `### [${folderName}](./${folderName}/index.md)\n\n`;
       // Recursively create index.md inside subfolders
       const subfolderContent = generateIndex(fullPath, path.join(relativePath, folderName));
       fs.writeFileSync(path.join(fullPath, 'index.md'), subfolderContent);
     }
-    // If it's an HTML file, add a link to it
+    // If it's an HTML file, add a link to it (encode spaces and special characters)
     else if (item.endsWith('.html')) {
-      const fileNameWithoutExtension = path.basename(item, '.html').replace(/\s+/g, '-'); // Replace spaces with hyphens
-      const encodedItem = urlEncodeFilename(item);
+      const fileNameWithoutExtension = path.basename(item, '.html'); // Leave spaces intact for filenames
+      const encodedItem = urlEncodeFilename(item); // Encode spaces as %20
       content += `- [${fileNameWithoutExtension}](./${path.join(relativePath, encodedItem)})\n`;
     }
   });
