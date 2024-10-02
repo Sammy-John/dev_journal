@@ -7,7 +7,7 @@ function urlEncodeFilename(filename) {
 }
 
 // Base folder containing all sections (e.g., dev_journal root folder)
-const baseFolder = './course-notes'; // Adjust the path if necessary to your main folder
+const baseFolder = './course-notes'; // Path to course-notes folder
 
 // Function to scan the directory and build links for each section
 function generateIndex(folder, relativePath = '') {
@@ -15,7 +15,7 @@ function generateIndex(folder, relativePath = '') {
 
   // Read all files and directories in the folder
   const items = fs.readdirSync(folder);
-  
+
   // Process each item
   items.forEach(item => {
     const fullPath = path.join(folder, item);
@@ -28,7 +28,9 @@ function generateIndex(folder, relativePath = '') {
     if (stats.isDirectory()) {
       const folderName = path.basename(fullPath);
       content += `### [${folderName}](./${folderName}/index.md)\n\n`;
-      generateIndex(fullPath, path.join(relativePath, folderName));  // Recursively create index.md inside subfolders
+      // Recursively create index.md inside subfolders
+      const subfolderContent = generateIndex(fullPath, path.join(relativePath, folderName));
+      fs.writeFileSync(path.join(fullPath, 'index.md'), subfolderContent);
     }
     // If it's a Markdown file, add a link to it
     else if (item.endsWith('.md')) {
@@ -41,9 +43,31 @@ function generateIndex(folder, relativePath = '') {
   return content;
 }
 
-// Function to create index.md for each top-level folder
+// Function to generate index.md for the course-notes folder itself
+function generateCourseNotesIndex() {
+  let content = `# Course Notes\n\n## Sections\n\n`;
+
+  // List all sections (subfolders) in the course-notes folder
+  const sections = fs.readdirSync(baseFolder).filter(item => {
+    return fs.statSync(path.join(baseFolder, item)).isDirectory();
+  });
+
+  // Add each section to the course-notes index.md
+  sections.forEach(section => {
+    content += `- [${section}](./${section}/index.md)\n`;
+  });
+
+  // Write the course-notes index.md
+  fs.writeFileSync(path.join(baseFolder, 'index.md'), content);
+  console.log('Course Notes index.md generated successfully!');
+}
+
+// Function to create index.md for each top-level folder and subfolders
 function generateSectionIndices() {
-  // List all sections in the base folder
+  // Generate course-notes index.md first
+  generateCourseNotesIndex();
+
+  // List all sections in the course-notes folder
   const sections = fs.readdirSync(baseFolder);
 
   // Loop through each section and generate its index.md
@@ -63,7 +87,7 @@ function generateSectionIndices() {
   });
 }
 
-// Generate index.md for each section in the base folder
+// Generate index.md for each section and the course-notes folder
 generateSectionIndices();
 
-console.log('All section index files generated successfully!');
+console.log('All index files generated successfully!');
