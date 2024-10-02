@@ -1,5 +1,9 @@
+---
+layout: layout
+title: intern-report
+---
+
 # intern-report
 
 ## Files and Subsections
 
-- [index](./intern-report\index.md)
