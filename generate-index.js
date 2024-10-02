@@ -31,12 +31,14 @@ function generateIndex(folder, relativePath = '') {
       // Recursively create index.md inside subfolders
       const subfolderContent = generateIndex(fullPath, path.join(relativePath, folderName));
       fs.writeFileSync(path.join(fullPath, 'index.md'), subfolderContent);
+      console.log(`Index file created: ${path.join(fullPath, 'index.md')}`);
     }
     // If it's an HTML file, add a link to it (encode spaces and special characters)
     else if (item.endsWith('.html')) {
       const fileNameWithoutExtension = path.basename(item, '.html'); // Leave spaces intact for filenames
       const encodedItem = urlEncodeFilename(item); // Encode spaces as %20
-      content += `- [${fileNameWithoutExtension}](./${path.join(relativePath, encodedItem)})\n`;
+      // Manually construct the relative path for the encoded filename
+      content += `- [${fileNameWithoutExtension}](./${relativePath}/${encodedItem})\n`;
     }
   });
 
@@ -101,11 +103,19 @@ function generateSectionIndices() {
     
     // Check if the section folder exists and is a directory
     if (fs.existsSync(sectionPath) && fs.statSync(sectionPath).isDirectory()) {
+      const indexPath = path.join(sectionPath, 'index.md');
+      
+      // Forcefully remove existing index.md file before generating
+      if (fs.existsSync(indexPath)) {
+        fs.unlinkSync(indexPath);
+        console.log(`Removed existing index.md in ${section}`);
+      }
+      
       const indexContent = generateIndex(sectionPath, section);
       
-      // Write the index.md file in the section folder
-      fs.writeFileSync(path.join(sectionPath, 'index.md'), indexContent);
-      console.log(`Index file generated for section: ${section}`);
+      // Write the new index.md file in the section folder
+      fs.writeFileSync(indexPath, indexContent);
+      console.log(`Index file generated and overwritten for section: ${section}`);
     } else {
       console.error(`Section folder not found or not a directory: ${section}`);
     }
