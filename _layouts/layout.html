@@ -5,17 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-
 </head>
 <body>
   <header>
     <nav>
       <ul>
-        <li><a href="/index.md">Home</a></li>
-        <li><a href="/course-notes/index.md">Course Notes</a></li>
-        <li><a href="/topic-notes/index.md">Topic Notes</a></li>
-        <li><a href="/projects/index.md">Projects</a></li>
-        <li><a href="/tutorials/index.md">Tutorials</a></li>
+        <li><a href="{{ "/index.md" | relative_url }}">Home</a></li>
+        <li><a href="{{ "/course-notes/index.md" | relative_url }}">Course Notes</a></li>
+        <li><a href="{{ "/topic-notes/index.md" | relative_url }}">Topic Notes</a></li>
+        <li><a href="{{ "/projects/portfolio.md" | relative_url }}">Projects</a></li>
+        <li><a href="{{ "/tutorials/index.md" | relative_url }}">Tutorials</a></li>
       </ul>
     </nav>
   </header>

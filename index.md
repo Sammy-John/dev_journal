@@ -5,21 +5,16 @@ title: Dev Journal
 
 # Welcome to Dev Journal
 
-The **Dev Journal** is a collection of course knowledge, extended learning, and project code aimed at providing valuable resources for learning and development. Whether you're exploring **IT systems**, diving into **programming principles**, or analyzing **business solutions**, this site has you covered.
+The **Dev Journal** is a consolidated collection of course knowledge, extended learning, and project code. Whether you're exploring foundational **IT systems**, delving into **programming principles**, or working on advanced **project-based learning**, you'll find everything organized and easy to navigate.
 
-## Explore the Sections
+## Explore the Major Sections
 
-### Course Notes
-- [IT Systems](it-systems/index.md): In-depth notes and insights on IT systems.
-- [Data Handling and Web Concepts](data-handling-and-web-concepts/index.md): Understanding data flows and web technologies.
-- [Programming Principles](programming-principles/index.md): Foundational programming concepts.
+- **[Course Notes](course-notes/index.md)**: Organized notes from various courses across different fields.
+- **[Topic Notes](topic-notes/index.md)**: Detailed breakdowns of specific topics for deeper learning.
+- **[Projects](projects/portfolio.md)**: Explore real-world projects and open-source contributions.
 
-### Topic Notes
-- [Software Design Patterns](topic-notes/software-design-patterns.md): Patterns for scalable software development.
-- [Algorithm Complexity](topic-notes/algorithm-complexity.md): Dive deep into algorithm performance.
+Use the global navigation at the top of the page to access all sections.
 
-### Projects
-- [Portfolio](projects/portfolio.md): Showcase of real-world applications and open-source contributions.
+---
 
-> Visit the live site at [Dev Journal](https://sammy-john.github.io/dev_journal/)
-
+Visit the live site at [Dev Journal](https://sammy-john.github.io/dev_journal/)
