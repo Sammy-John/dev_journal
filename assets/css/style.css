@@ -1,50 +1,48 @@
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-  
-  header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-  }
-  
-  header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  header nav ul li {
-    display: inline;
-    margin-right: 15px;
-  }
-  
-  header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  header nav ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-  }
-  
+/* Adjusting font only for specific content areas, not globally */
+body.custom-style {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* only if you want to change the entire background */
+}
+
+/* Custom header styling, targeting a class */
+.custom-header {
+  background-color: #333; /* Keeping your custom background */
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.custom-header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-header nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.custom-header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.custom-header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Custom footer with only necessary changes */
+.custom-footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%; /* Removed position: fixed */
+}
+
+/* Customizing content padding */
+main.custom-content {
+  padding: 20px;
+}
