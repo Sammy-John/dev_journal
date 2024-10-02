@@ -3,6 +3,7 @@ layout: layout.html
 title: Dev Journal
 ---
 
+
 # Dev Journal
 
 Welcome to the **Dev Journal**, a collection of knowledge, extended learning, and project code. Navigate through different sections of the journal using the links below.
