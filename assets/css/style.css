@@ -1,48 +1,157 @@
-/* Adjusting font only for specific content areas, not globally */
-body.custom-style {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4; /* only if you want to change the entire background */
+/* Base Styling */
+body {
+  font-family: 'Poppins', sans-serif; /* Use a modern, clean font */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-/* Custom header styling, targeting a class */
-.custom-header {
-  background-color: #333; /* Keeping your custom background */
+/* Global Layout */
+header {
+  background-color: #2c3e50;
   color: white;
-  padding: 10px 0;
-  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.custom-header nav ul {
+header nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 
-.custom-header nav ul li {
-  display: inline;
-  margin-right: 15px;
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
 }
 
-.custom-header nav ul li a {
+header nav ul li a {
   color: white;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: bold;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
 }
 
-.custom-header nav ul li a:hover {
-  text-decoration: underline;
+header nav ul li a:hover {
+  background-color: #3498db;
+  border-radius: 5px;
 }
 
-/* Custom footer with only necessary changes */
-.custom-footer {
-  background-color: #333;
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+footer {
+  background-color: #2c3e50;
   color: white;
   text-align: center;
-  padding: 10px 0;
-  width: 100%; /* Removed position: fixed */
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Customizing content padding */
-main.custom-content {
+/* Typography */
+h1, h2, h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+button, .btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: #2980b9;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:focus, .btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.3);
+}
+
+/* Form Fields */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.3);
+}
+
+/* Cards for Content */
+.card {
+  background: white;
+  border-radius: 8px;
   padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  header nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
+  
+  main {
+      padding: 0 10px;
+  }
 }
