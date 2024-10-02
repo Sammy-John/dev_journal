@@ -37,8 +37,8 @@ function generateIndex(folder, relativePath = '') {
     else if (item.endsWith('.html')) {
       const fileNameWithoutExtension = path.basename(item, '.html'); // Leave spaces intact for filenames
       const encodedItem = urlEncodeFilename(item); // Encode spaces as %20
-      // Manually construct the relative path for the encoded filename
-      content += `- [${fileNameWithoutExtension}](./${relativePath}/${encodedItem})\n`;
+      // Use only the filename in the link, as we're already in the folder
+      content += `- [${fileNameWithoutExtension}](${encodedItem})\n`;
     }
   });
 
