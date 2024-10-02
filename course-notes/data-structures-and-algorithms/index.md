@@ -7,5 +7,5 @@ title: data-structures-and-algorithms
 
 ## Files and Subsections
 
-- [Data Structures and Algorithms Revision](./data-structures-and-algorithms\Data%20Structures%20and%20Algorithms%20Revision.html)
-- [Data Structures and Algorithms Session 1](./data-structures-and-algorithms\Data%20Structures%20and%20Algorithms%20Session%201.html)
+- [Data-Structures-and-Algorithms-Revision](./data-structures-and-algorithms\Data-Structures-and-Algorithms-Revision.html)
+- [Data-Structures-and-Algorithms-Session-1](./data-structures-and-algorithms\Data-Structures-and-Algorithms-Session-1.html)

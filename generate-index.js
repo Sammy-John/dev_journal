@@ -1,9 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
-// Function to URL-encode filenames for HTML links
+// Function to URL-encode filenames for HTML links and replace spaces with hyphens
 function urlEncodeFilename(filename) {
-  return encodeURIComponent(filename).replace(/%2F/g, '/');
+  return encodeURIComponent(filename.replace(/\s+/g, '-')).replace(/%2F/g, '/');
 }
 
 // Base folder containing all sections (e.g., dev_journal root folder)
@@ -26,7 +26,7 @@ function generateIndex(folder, relativePath = '') {
     
     // If it's a folder, recursively scan it and link to the folder's index.md
     if (stats.isDirectory()) {
-      const folderName = path.basename(fullPath);
+      const folderName = path.basename(fullPath).replace(/\s+/g, '-'); // Replace spaces with hyphens
       content += `### [${folderName}](./${folderName}/index.md)\n\n`;
       // Recursively create index.md inside subfolders
       const subfolderContent = generateIndex(fullPath, path.join(relativePath, folderName));
@@ -34,7 +34,7 @@ function generateIndex(folder, relativePath = '') {
     }
     // If it's an HTML file, add a link to it
     else if (item.endsWith('.html')) {
-      const fileNameWithoutExtension = path.basename(item, '.html');
+      const fileNameWithoutExtension = path.basename(item, '.html').replace(/\s+/g, '-'); // Replace spaces with hyphens
       const encodedItem = urlEncodeFilename(item);
       content += `- [${fileNameWithoutExtension}](./${path.join(relativePath, encodedItem)})\n`;
     }
@@ -70,8 +70,7 @@ function generateCourseNotesIndex() {
     'interaction-design',
     'web-technologies',
     'full-stack-python-development'
-];
-
+  ];
 
   // Add each section to the course-notes index.md in the specified order
   orderedSections.forEach(section => {
