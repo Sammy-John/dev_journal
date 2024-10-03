@@ -23,19 +23,18 @@ title: mobile-app-development
 
 ## Notes
 
-- [!! Important !!](!!%20Important%20!!.html) - Brief description here.
-- [0. Mobile App Design Principles](0.%20Mobile%20App%20Design%20Principles.html) - Brief description here.
-- [0. Overview and Class Notes](0.%20Overview%20and%20Class%20Notes.html) - Brief description here.
-- [1. Research](1.%20Research.html) - Brief description here.
-- [2.Exploring the Ideas](2.Exploring%20the%20Ideas.html) - Brief description here.
-- [3.Applying Mobile Patterns](3.Applying%20Mobile%20Patterns.html) - Brief description here.
-- [4.Creating Detailed representation of your solution](4.Creating%20Detailed%20representation%20of%20your%20solution.html) - Brief description here.
-- [5. Prototyping](5.%20Prototyping.html) - Brief description here.
-- [6.User testing the prototype](6.User%20testing%20the%20prototype.html) - Brief description here.
-- [Development Environment](Development%20Environment.html) - Brief description here.
-- [Last Week Agenda](Last%20Week%20Agenda.html) - Brief description here.
-- [Project.](Project..html) - Brief description here.
-- [Testing](Testing.html) - Brief description here.
-- [The journey.](The%20journey..html) - Brief description here.
-- [To Do Tomorrow](To%20Do%20Tomorrow.html) - Brief description here.
-
+- [!! Important !!](!!-Important-!!.html)
+- [0. Mobile App Design Principles](0.-Mobile-App-Design-Principles.html)
+- [0. Overview and Class Notes](0.-Overview-and-Class-Notes.html)
+- [1. Research](1.-Research.html)
+- [2.Exploring the Ideas](2.Exploring-the-Ideas.html)
+- [3.Applying Mobile Patterns](3.Applying-Mobile-Patterns.html)
+- [4.Creating Detailed representation of your solution](4.Creating-Detailed-representation-of-your-solution.html)
+- [5. Prototyping](5.-Prototyping.html)
+- [6.User testing the prototype](6.User-testing-the-prototype.html)
+- [Development Environment](Development-Environment.html)
+- [Last Week Agenda](Last-Week-Agenda.html)
+- [Project.](Project..html)
+- [Testing](Testing.html)
+- [The journey.](The-journey..html)
+- [To Do Tomorrow](To-Do-Tomorrow.html)

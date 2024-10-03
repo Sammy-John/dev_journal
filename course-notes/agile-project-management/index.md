@@ -17,25 +17,24 @@ title: agile-project-management
 
 ## Notes
 
-- [0. Overview](0.%20Overview.html) - Brief description here.
-- [0.01](0.01.html) - Brief description here.
-- [0.1 Reading List](0.1%20Reading%20List.html) - Brief description here.
-- [1.0 Team Project Overview](1.0%20Team%20Project%20Overview.html) - Brief description here.
-- [1.1 Team Project - Analysis -Gannt Chart + Draft Budget](1.1%20Team%20Project%20-%20Analysis%20-Gannt%20Chart%20%2B%20Draft%20Budget.html) - Brief description here.
-- [1.2 Monday Plan](1.2%20Monday%20Plan.html) - Brief description here.
-- [1.2.1 Meeting Agenda](1.2.1%20Meeting%20Agenda.html) - Brief description here.
-- [1.2.2 Monday SprintPlanning](1.2.2%20Monday%20SprintPlanning.html) - Brief description here.
-- [2.0 Project Management](2.0%20Project%20Management.html) - Brief description here.
-- [2.1 Project Management Simplified Notes](2.1%20Project%20Management%20Simplified%20Notes.html) - Brief description here.
-- [3.0 Agile](3.0%20Agile.html) - Brief description here.
-- [3.1 Introduction to Kanban V Scrum](3.1%20Introduction%20to%20Kanban%20V%20Scrum.html) - Brief description here.
-- [4.0 Theory of Kanban](4.0%20Theory%20of%20Kanban.html) - Brief description here.
-- [4.1 Kanban Board Setup](4.1%20Kanban%20Board%20Setup.html) - Brief description here.
-- [5.1 Theory and Practice of Scrum](5.1%20Theory%20and%20Practice%20of%20Scrum.html) - Brief description here.
-- [5.2 Scrum Board Setup](5.2%20Scrum%20Board%20Setup.html) - Brief description here.
-- [5.3 Estimation](5.3%20Estimation.html) - Brief description here.
-- [5.4 Scrum Retrospective](5.4%20Scrum%20Retrospective.html) - Brief description here.
-- [Fri 1811 Pre-Meet Tasks](Fri%201811%20Pre-Meet%20Tasks.html) - Brief description here.
-- [Stand up Fri 25th](Stand%20up%20Fri%2025th.html) - Brief description here.
-- [Standup 1111 9am](Standup%201111%209am.html) - Brief description here.
-
+- [0. Overview](0.-Overview.html)
+- [0.01](0.01.html)
+- [0.1 Reading List](0.1-Reading-List.html)
+- [1.0 Team Project Overview](1.0-Team-Project-Overview.html)
+- [1.1 Team Project - Analysis -Gannt Chart + Draft Budget](1.1-Team-Project---Analysis--Gannt-Chart-%2B-Draft-Budget.html)
+- [1.2 Monday Plan](1.2-Monday-Plan.html)
+- [1.2.1 Meeting Agenda](1.2.1-Meeting-Agenda.html)
+- [1.2.2 Monday SprintPlanning](1.2.2-Monday-SprintPlanning.html)
+- [2.0 Project Management](2.0-Project-Management.html)
+- [2.1 Project Management Simplified Notes](2.1-Project-Management-Simplified-Notes.html)
+- [3.0 Agile](3.0-Agile.html)
+- [3.1 Introduction to Kanban V Scrum](3.1-Introduction-to-Kanban-V-Scrum.html)
+- [4.0 Theory of Kanban](4.0-Theory-of-Kanban.html)
+- [4.1 Kanban Board Setup](4.1-Kanban-Board-Setup.html)
+- [5.1 Theory and Practice of Scrum](5.1-Theory-and-Practice-of-Scrum.html)
+- [5.2 Scrum Board Setup](5.2-Scrum-Board-Setup.html)
+- [5.3 Estimation](5.3-Estimation.html)
+- [5.4 Scrum Retrospective](5.4-Scrum-Retrospective.html)
+- [Fri 1811 Pre-Meet Tasks](Fri-1811-Pre-Meet-Tasks.html)
+- [Stand up Fri 25th](Stand-up-Fri-25th.html)
+- [Standup 1111 9am](Standup-1111-9am.html)
