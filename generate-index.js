@@ -35,81 +35,67 @@ function generateCourseNotesIndex() {
 }
 
 function generateIndex(folder, relativePath = '') {
-  try {
-    let content = `---\nlayout: layout\ntitle: ${relativePath || 'Section'}\n---\n\n# ${relativePath || 'Section'}\n\n`;
+  let content = `---\nlayout: layout\ntitle: ${relativePath || 'Section'}\n---\n\n# ${relativePath || 'Section'}\n\n`;
 
-    const items = fs.readdirSync(folder);
+  const items = fs.readdirSync(folder);
 
-    const directories = [];
-    const files = [];
-    const cheatsheets = [];
+  const directories = [];
+  const files = [];
 
-    items.forEach(item => {
-      const fullPath = path.join(folder, item);
-      const stats = fs.statSync(fullPath);
+  items.forEach(item => {
+    const fullPath = path.join(folder, item);
+    const stats = fs.statSync(fullPath);
 
-      if (stats.isDirectory()) {
-        directories.push(item);
-      } else if (item.endsWith('.md')) {
-        if (!item.toLowerCase().includes('template.md')) {
-          if (item.toLowerCase().includes('cheatsheet')) {
-            cheatsheets.push(item);
-          } else {
-            files.push(item);
-          }
-        }
-      } else if (item.endsWith('.html')) {
-        files.push(item);
-      }
-    });
-
-    if (folder === topicNotesFolder || folder.startsWith(topicNotesFolder + path.sep)) {
-      if (directories.length > 0) {
-        content += `## Explore the Topics:\n<div class="card-grid">\n`;
-        directories.forEach(dir => {
-          content += `
-<div class="card">
-  <h3>${dir.replace(/-/g, ' ')}</h3>
-  <p>Explore notes and topics related to ${dir.replace(/-/g, ' ')}.</p>
-  <a href="./${dir}/index.md">Explore ${dir.replace(/-/g, ' ')}</a>
-</div>\n`;
-        });
-        content += `</div>\n\n`;
-      }
-    } else {
-      if (directories.length > 0) {
-        content += `## Subsections\n\n`;
-        directories.forEach(dir => {
-          content += `### [${dir.replace(/-/g, ' ')}](./${dir}/index.md)\n\n`;
-        });
-      }
+    if (stats.isDirectory()) {
+      directories.push(item);
+    } else if (item.endsWith('.md')) {
+      files.push(item);
     }
+  });
 
-    if (files.length > 0) {
-      content += `## Notes\n\n`;
-      files.forEach(file => {
-        const encodedItem = urlEncodeFilename(file);
-        content += `- [${file.replace(/\.[^/.]+$/, '')}](${encodedItem})\n`;
-      });
-    }
-
+  if (directories.length > 0) {
+    content += `## Explore the Topics:\n<div class="card-grid">\n`;
     directories.forEach(dir => {
-      const subfolderPath = path.join(folder, dir);
-      const indexPath = path.join(subfolderPath, 'index.md');
-      if (fs.existsSync(indexPath)) {
-        fs.unlinkSync(indexPath);
-        console.log(`Removed existing index.md in ${subfolderPath}`);
-      }
-      const subfolderContent = generateIndex(subfolderPath, path.join(relativePath, dir));
-      fs.writeFileSync(indexPath, subfolderContent);
-      console.log(`Index file created: ${indexPath}`);
+      const folderName = dir.replace(/-/g, ' ');
+      // Link now points to .html instead of .md
+      content += `
+<div class="card">
+  <h3>${folderName}</h3>
+  <p>Explore notes and topics related to ${folderName}.</p>
+  <a href="./${dir}/index.html">Explore ${folderName}</a>
+</div>\n`;
     });
-
-    return content;
-  } catch (error) {
-    console.error(`Error generating index for folder ${folder}:`, error);
+    content += `</div>\n\n`;
   }
+
+  if (files.length > 0) {
+    content += `## Notes\n\n`;
+    files.forEach(file => {
+      const fileNameWithoutExtension = path.basename(file, '.md');
+      // Convert link from .md to .html
+      const encodedItem = urlEncodeFilename(file).replace('.md', '.html');
+      content += `- [${fileNameWithoutExtension}](${encodedItem})\n`;
+    });
+    content += `\n`;
+  }
+
+  directories.forEach(dir => {
+    const subfolderPath = path.join(folder, dir);
+    const indexPath = path.join(subfolderPath, 'index.md');
+
+    if (fs.existsSync(indexPath)) {
+      fs.unlinkSync(indexPath);
+      console.log(`Removed existing index.md in ${subfolderPath}`);
+    }
+
+    const subfolderContent = generateIndex(subfolderPath, path.join(relativePath, dir));
+    fs.writeFileSync(indexPath, subfolderContent);
+    console.log(`Index file created: ${indexPath}`);
+  });
+
+  return content;
 }
+
 
 function createTemplateNote() {
   try {

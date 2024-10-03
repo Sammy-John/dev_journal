@@ -5,28 +5,37 @@ title: game-development
 
 # game-development
 
-## Subsections
+## Explore the Topics:
+<div class="card-grid">
 
-### [3.1. Game Design Basics files](./3.1. Game Design Basics files/index.md)
+<div class="card">
+  <h3>3.1. Game Design Basics files</h3>
+  <p>Explore notes and topics related to 3.1. Game Design Basics files.</p>
+  <a href="./3.1. Game Design Basics files/index.html">Explore 3.1. Game Design Basics files</a>
+</div>
 
-### [3.1.2.Game Ideas files](./3.1.2.Game Ideas files/index.md)
+<div class="card">
+  <h3>3.1.2.Game Ideas files</h3>
+  <p>Explore notes and topics related to 3.1.2.Game Ideas files.</p>
+  <a href="./3.1.2.Game Ideas files/index.html">Explore 3.1.2.Game Ideas files</a>
+</div>
 
-### [3.1.3 Writing the Story files](./3.1.3 Writing the Story files/index.md)
+<div class="card">
+  <h3>3.1.3 Writing the Story files</h3>
+  <p>Explore notes and topics related to 3.1.3 Writing the Story files.</p>
+  <a href="./3.1.3 Writing the Story files/index.html">Explore 3.1.3 Writing the Story files</a>
+</div>
 
-### [3.1.5.1 GDD Game Development Documentation files](./3.1.5.1 GDD Game Development Documentation files/index.md)
+<div class="card">
+  <h3>3.1.5.1 GDD Game Development Documentation files</h3>
+  <p>Explore notes and topics related to 3.1.5.1 GDD Game Development Documentation files.</p>
+  <a href="./3.1.5.1 GDD Game Development Documentation files/index.html">Explore 3.1.5.1 GDD Game Development Documentation files</a>
+</div>
 
-### [3.1.5.2 GDD Document files](./3.1.5.2 GDD Document files/index.md)
+<div class="card">
+  <h3>3.1.5.2 GDD Document files</h3>
+  <p>Explore notes and topics related to 3.1.5.2 GDD Document files.</p>
+  <a href="./3.1.5.2 GDD Document files/index.html">Explore 3.1.5.2 GDD Document files</a>
+</div>
+</div>
 
-## Notes
-
-- [0. Overview and Class Notes](0.-Overview-and-Class-Notes.html)
-- [1. Practical Assessment 1](1.-Practical-Assessment-1.html)
-- [2. Study Plan](2.-Study-Plan.html)
-- [3. Subject Notes](3.-Subject-Notes.html)
-- [3.1. Game Design Basics](3.1.-Game-Design-Basics.html)
-- [3.1.2.Game Ideas](3.1.2.Game-Ideas.html)
-- [3.1.3 Writing the Story](3.1.3-Writing-the-Story.html)
-- [3.1.4.Importance of User Design](3.1.4.Importance-of-User-Design.html)
-- [3.1.5.1 GDD Game Development Documentation](3.1.5.1-GDD-Game-Development-Documentation.html)
-- [3.1.5.2 GDD Document](3.1.5.2-GDD-Document.html)
-- [3.1.6 New Zealand Classification System](3.1.6-New-Zealand-Classification-System.html)

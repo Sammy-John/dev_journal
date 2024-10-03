@@ -5,36 +5,49 @@ title: mobile-app-development
 
 # mobile-app-development
 
-## Subsections
+## Explore the Topics:
+<div class="card-grid">
 
-### [1. Research files](./1. Research files/index.md)
+<div class="card">
+  <h3>1. Research files</h3>
+  <p>Explore notes and topics related to 1. Research files.</p>
+  <a href="./1. Research files/index.html">Explore 1. Research files</a>
+</div>
 
-### [2.Exploring the Ideas files](./2.Exploring the Ideas files/index.md)
+<div class="card">
+  <h3>2.Exploring the Ideas files</h3>
+  <p>Explore notes and topics related to 2.Exploring the Ideas files.</p>
+  <a href="./2.Exploring the Ideas files/index.html">Explore 2.Exploring the Ideas files</a>
+</div>
 
-### [3.Applying Mobile Patterns files](./3.Applying Mobile Patterns files/index.md)
+<div class="card">
+  <h3>3.Applying Mobile Patterns files</h3>
+  <p>Explore notes and topics related to 3.Applying Mobile Patterns files.</p>
+  <a href="./3.Applying Mobile Patterns files/index.html">Explore 3.Applying Mobile Patterns files</a>
+</div>
 
-### [4.Creating Detailed representation of your solution files](./4.Creating Detailed representation of your solution files/index.md)
+<div class="card">
+  <h3>4.Creating Detailed representation of your solution files</h3>
+  <p>Explore notes and topics related to 4.Creating Detailed representation of your solution files.</p>
+  <a href="./4.Creating Detailed representation of your solution files/index.html">Explore 4.Creating Detailed representation of your solution files</a>
+</div>
 
-### [5. Prototyping files](./5. Prototyping files/index.md)
+<div class="card">
+  <h3>5. Prototyping files</h3>
+  <p>Explore notes and topics related to 5. Prototyping files.</p>
+  <a href="./5. Prototyping files/index.html">Explore 5. Prototyping files</a>
+</div>
 
-### [Last Week Agenda files](./Last Week Agenda files/index.md)
+<div class="card">
+  <h3>Last Week Agenda files</h3>
+  <p>Explore notes and topics related to Last Week Agenda files.</p>
+  <a href="./Last Week Agenda files/index.html">Explore Last Week Agenda files</a>
+</div>
 
-### [Project. files](./Project. files/index.md)
+<div class="card">
+  <h3>Project. files</h3>
+  <p>Explore notes and topics related to Project. files.</p>
+  <a href="./Project. files/index.html">Explore Project. files</a>
+</div>
+</div>
 
-## Notes
-
-- [!! Important !!](!!-Important-!!.html)
-- [0. Mobile App Design Principles](0.-Mobile-App-Design-Principles.html)
-- [0. Overview and Class Notes](0.-Overview-and-Class-Notes.html)
-- [1. Research](1.-Research.html)
-- [2.Exploring the Ideas](2.Exploring-the-Ideas.html)
-- [3.Applying Mobile Patterns](3.Applying-Mobile-Patterns.html)
-- [4.Creating Detailed representation of your solution](4.Creating-Detailed-representation-of-your-solution.html)
-- [5. Prototyping](5.-Prototyping.html)
-- [6.User testing the prototype](6.User-testing-the-prototype.html)
-- [Development Environment](Development-Environment.html)
-- [Last Week Agenda](Last-Week-Agenda.html)
-- [Project.](Project..html)
-- [Testing](Testing.html)
-- [The journey.](The-journey..html)
-- [To Do Tomorrow](To-Do-Tomorrow.html)

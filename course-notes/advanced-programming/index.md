@@ -5,79 +5,91 @@ title: advanced-programming
 
 # advanced-programming
 
-## Subsections
+## Explore the Topics:
+<div class="card-grid">
 
-### [1.1.4 Static Variables files](./1.1.4 Static Variables files/index.md)
+<div class="card">
+  <h3>1.1.4 Static Variables files</h3>
+  <p>Explore notes and topics related to 1.1.4 Static Variables files.</p>
+  <a href="./1.1.4 Static Variables files/index.html">Explore 1.1.4 Static Variables files</a>
+</div>
 
-### [1.2.1 Class Diagrams files](./1.2.1 Class Diagrams files/index.md)
+<div class="card">
+  <h3>1.2.1 Class Diagrams files</h3>
+  <p>Explore notes and topics related to 1.2.1 Class Diagrams files.</p>
+  <a href="./1.2.1 Class Diagrams files/index.html">Explore 1.2.1 Class Diagrams files</a>
+</div>
 
-### [1.2.2 Inheritance files](./1.2.2 Inheritance files/index.md)
+<div class="card">
+  <h3>1.2.2 Inheritance files</h3>
+  <p>Explore notes and topics related to 1.2.2 Inheritance files.</p>
+  <a href="./1.2.2 Inheritance files/index.html">Explore 1.2.2 Inheritance files</a>
+</div>
 
-### [1.3.1 Implementing Associations in an RDBMS files](./1.3.1 Implementing Associations in an RDBMS files/index.md)
+<div class="card">
+  <h3>1.3.1 Implementing Associations in an RDBMS files</h3>
+  <p>Explore notes and topics related to 1.3.1 Implementing Associations in an RDBMS files.</p>
+  <a href="./1.3.1 Implementing Associations in an RDBMS files/index.html">Explore 1.3.1 Implementing Associations in an RDBMS files</a>
+</div>
 
-### [1.3.2 Implementation Associations in an OO Language files](./1.3.2 Implementation Associations in an OO Language files/index.md)
+<div class="card">
+  <h3>1.3.2 Implementation Associations in an OO Language files</h3>
+  <p>Explore notes and topics related to 1.3.2 Implementation Associations in an OO Language files.</p>
+  <a href="./1.3.2 Implementation Associations in an OO Language files/index.html">Explore 1.3.2 Implementation Associations in an OO Language files</a>
+</div>
 
-### [1.3.3 Implementation in an OO Language files](./1.3.3 Implementation in an OO Language files/index.md)
+<div class="card">
+  <h3>1.3.3 Implementation in an OO Language files</h3>
+  <p>Explore notes and topics related to 1.3.3 Implementation in an OO Language files.</p>
+  <a href="./1.3.3 Implementation in an OO Language files/index.html">Explore 1.3.3 Implementation in an OO Language files</a>
+</div>
 
-### [1.3.4 Implementing inheritance in an RDBMS files](./1.3.4 Implementing inheritance in an RDBMS files/index.md)
+<div class="card">
+  <h3>1.3.4 Implementing inheritance in an RDBMS files</h3>
+  <p>Explore notes and topics related to 1.3.4 Implementing inheritance in an RDBMS files.</p>
+  <a href="./1.3.4 Implementing inheritance in an RDBMS files/index.html">Explore 1.3.4 Implementing inheritance in an RDBMS files</a>
+</div>
 
-### [1.4.1 Misusing Inheritance files](./1.4.1 Misusing Inheritance files/index.md)
+<div class="card">
+  <h3>1.4.1 Misusing Inheritance files</h3>
+  <p>Explore notes and topics related to 1.4.1 Misusing Inheritance files.</p>
+  <a href="./1.4.1 Misusing Inheritance files/index.html">Explore 1.4.1 Misusing Inheritance files</a>
+</div>
 
-### [1.4.2 Aggregation files](./1.4.2 Aggregation files/index.md)
+<div class="card">
+  <h3>1.4.2 Aggregation files</h3>
+  <p>Explore notes and topics related to 1.4.2 Aggregation files.</p>
+  <a href="./1.4.2 Aggregation files/index.html">Explore 1.4.2 Aggregation files</a>
+</div>
 
-### [1.5.1 Designing and Managing Forms files](./1.5.1 Designing and Managing Forms files/index.md)
+<div class="card">
+  <h3>1.5.1 Designing and Managing Forms files</h3>
+  <p>Explore notes and topics related to 1.5.1 Designing and Managing Forms files.</p>
+  <a href="./1.5.1 Designing and Managing Forms files/index.html">Explore 1.5.1 Designing and Managing Forms files</a>
+</div>
 
-### [2.1.1 Overriding Methods files](./2.1.1 Overriding Methods files/index.md)
+<div class="card">
+  <h3>2.1.1 Overriding Methods files</h3>
+  <p>Explore notes and topics related to 2.1.1 Overriding Methods files.</p>
+  <a href="./2.1.1 Overriding Methods files/index.html">Explore 2.1.1 Overriding Methods files</a>
+</div>
 
-### [2.1.5 Abstract Class and Methods files](./2.1.5 Abstract Class and Methods files/index.md)
+<div class="card">
+  <h3>2.1.5 Abstract Class and Methods files</h3>
+  <p>Explore notes and topics related to 2.1.5 Abstract Class and Methods files.</p>
+  <a href="./2.1.5 Abstract Class and Methods files/index.html">Explore 2.1.5 Abstract Class and Methods files</a>
+</div>
 
-### [2.2.0 What is Polymorphism files](./2.2.0 What is Polymorphism files/index.md)
+<div class="card">
+  <h3>2.2.0 What is Polymorphism files</h3>
+  <p>Explore notes and topics related to 2.2.0 What is Polymorphism files.</p>
+  <a href="./2.2.0 What is Polymorphism files/index.html">Explore 2.2.0 What is Polymorphism files</a>
+</div>
 
-### [2.2.3 Casting and Conversion files](./2.2.3 Casting and Conversion files/index.md)
+<div class="card">
+  <h3>2.2.3 Casting and Conversion files</h3>
+  <p>Explore notes and topics related to 2.2.3 Casting and Conversion files.</p>
+  <a href="./2.2.3 Casting and Conversion files/index.html">Explore 2.2.3 Casting and Conversion files</a>
+</div>
+</div>
 
-## Notes
-
-- [0. Overview](0.-Overview.html)
-- [1.0 Programming Concepts](1.0-Programming-Concepts.html)
-- [1.1.1 Constructors and Overloading](1.1.1-Constructors-and-Overloading.html)
-- [1.1.2 Encapsulation](1.1.2-Encapsulation.html)
-- [1.1.2 Managing the Values of Private Attributes](1.1.2-Managing-the-Values-of-Private-Attributes.html)
-- [1.1.3 Managing Objects](1.1.3-Managing-Objects.html)
-- [1.1.4 Static Variables](1.1.4-Static-Variables.html)
-- [1.2.1 Class Diagrams](1.2.1-Class-Diagrams.html)
-- [1.2.2 Inheritance](1.2.2-Inheritance.html)
-- [1.3.1 Implementing Associations in an RDBMS](1.3.1-Implementing-Associations-in-an-RDBMS.html)
-- [1.3.2 Implementation Associations in an OO Language](1.3.2-Implementation-Associations-in-an-OO-Language.html)
-- [1.3.3 Implementation in an OO Language](1.3.3-Implementation-in-an-OO-Language.html)
-- [1.3.4 Implementing inheritance in an RDBMS](1.3.4-Implementing-inheritance-in-an-RDBMS.html)
-- [1.4.1 Misusing Inheritance](1.4.1-Misusing-Inheritance.html)
-- [1.4.2 Aggregation](1.4.2-Aggregation.html)
-- [1.5.1 Designing and Managing Forms](1.5.1-Designing-and-Managing-Forms.html)
-- [2.0 Inheritance](2.0-Inheritance.html)
-- [2.1.1 Overriding Methods](2.1.1-Overriding-Methods.html)
-- [2.1.2 Constructors in a Hierachy](2.1.2-Constructors-in-a-Hierachy.html)
-- [2.1.3 Introduction to BDD and Specification by Example](2.1.3-Introduction-to-BDD-and-Specification-by-Example.html)
-- [2.1.4 Built in Classes](2.1.4-Built-in-Classes.html)
-- [2.1.5 Abstract Class and Methods](2.1.5-Abstract-Class-and-Methods.html)
-- [2.2.0 What is Polymorphism](2.2.0-What-is-Polymorphism.html)
-- [2.2.1 Object Type Vs Variable Type](2.2.1-Object-Type-Vs-Variable-Type.html)
-- [2.2.3 Casting and Conversion](2.2.3-Casting-and-Conversion.html)
-- [3.1.0 Unit Testing Intro](3.1.0-Unit-Testing-Intro.html)
-- [3.1.1 Good Test Coding Practices](3.1.1-Good-Test-Coding-Practices.html)
-- [3.1.2 Further Testing Consideration](3.1.2-Further-Testing-Consideration.html)
-- [3.2.1 Catching System Exceptions](3.2.1-Catching-System-Exceptions.html)
-- [3.2.2 Creating and Throwing Own Exceptions](3.2.2-Creating-and-Throwing-Own-Exceptions.html)
-- [3.3.1 Test Driven Development Introduction](3.3.1-Test-Driven-Development-Introduction.html)
-- [3.3.2 Test First](3.3.2-Test-First.html)
-- [3.3.3 Test Driven Development (TDD)](3.3.3-Test-Driven-Development-(TDD).html)
-- [Assignment 1 Draft](Assignment-1-Draft.html)
-- [Feedback - Assessment 1](Feedback---Assessment-1.html)
-- [Week 1](Week-1.html)
-- [Week 2](Week-2.html)
-- [Week 3](Week-3.html)
-- [Week 4](Week-4.html)
-- [Week 5](Week-5.html)
-- [Week 6 Reading Plan](Week-6-Reading-Plan.html)
-- [Week 6](Week-6.html)
-- [Week 7](Week-7.html)
-- [Week 8](Week-8.html)
