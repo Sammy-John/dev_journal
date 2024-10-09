@@ -20,13 +20,13 @@ const FunctionalComponent = ({ message }) => {
 
 // Usage
 <FunctionalComponent message="Hello from Functional Component!" />
-```
+``` 
 
 This code demonstrates a functional component that receives a `message` prop and displays it inside an `<h1>` tag.
 
 ---
 
-- ## **Class Components**:  
+## **Class Components**:  
   Class components are ES6 classes that extend `React.Component` and contain methods such as `render()`. They are stateful and can have lifecycle methods, but they are less common in modern React development since the introduction of hooks.
 
   **Class Component**
@@ -50,7 +50,7 @@ class ClassComponent extends React.Component {
 This example demonstrates a **class component** that manages internal state. The `message` state is displayed inside an `<h1>` tag, and the state is initialized in the constructor.
 
 
-- ## **Presentational Components**:  
+## **Presentational Components**:  
   Presentational components are primarily responsible for displaying data and receiving it via props. They are typically stateless and focus on the UI without handling any logic or state manipulation.
 
   **Presentational Component**
@@ -66,8 +66,9 @@ const PresentationalComponent = ({ name }) => {
 
 This example shows a **presentational component** that receives the `name` prop and displays it inside a `<p>` tag. It focuses purely on displaying data without handling any state or logic, making it a typical presentational component.
 
+---
 
-- ## **Container Components**:  
+## **Container Components**:  
   Container components manage the logic of the application. They often fetch data, hold state, and pass it down to presentational components via props. They act as the "brains" of the UI.
 
 **Container Component**
@@ -93,7 +94,7 @@ In this example, the **Container Component** manages the state (`name`) and pass
 
 ---
 
-- **High Order Components (HOCs)**:  
+## **High Order Components (HOCs)**:  
   HOCs are functions that take a component and return a new component with additional props or functionality. They allow for reusability of logic across multiple components.
 
 **High Order Component (HOC)**
