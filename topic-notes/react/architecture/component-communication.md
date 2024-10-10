@@ -61,6 +61,8 @@ const ChildComponent = ({ sendData }) => {
 
 **Lifting State Up**
 
+Sharing state between sibling components by lifting it to the common parent.
+
 ```jsx
 // State is lifted up to the common ancestor to share between sibling components.
 const ParentComponent = () => {
@@ -93,6 +95,8 @@ const ChildComponentB = ({ data }) => {
 ---
 
 **Using Context API for Deep Communication**
+
+For sharing data between distant components without proper drilling.
 
 ```jsx
 import React, { createContext, useContext } from "react";
