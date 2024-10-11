@@ -19,5 +19,11 @@ title: react
   <p>Explore notes and topics related to react hooks.</p>
   <a href="./react-hooks/index.html">Explore react hooks</a>
 </div>
+
+<div class="card">
+  <h3>state management</h3>
+  <p>Explore notes and topics related to state management.</p>
+  <a href="./state-management/index.html">Explore state management</a>
+</div>
 </div>
 
